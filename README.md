@@ -41,8 +41,11 @@ Running "run_analysis.R"
 The following provides the steps to run "run_analysis.R" locally.
 
 -1) Unzip data from cloud storage and rename folder as UCIHARDataset (or a name of your choice) and set as working directory. You will need to manually replace line 3 with the path to the working directory. Note that both the dataset and run_analysis.R must be in the same working directory.
+
 -2) Use the **source** command to run "run_analysis.R" in RStudio.
+
 -3) You will find only one output file in the current working directory which contains cleaned data with only the merged means: "tidydata.txt"
+
 -4) Use the **read.table** command to read the file. You should see a data set with 180 rows and 68 variables. 
 
 
