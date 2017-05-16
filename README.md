@@ -1,7 +1,8 @@
-#Getting and Cleaning Data Course Project 
+Getting and Cleaning Data Course Project 
+===========================================
 
-
-##Description
+Description
+--------------------------------------------
 
 This assignment requires the preparation of a raw data set into a tidy data set. Two data sets were generated: 
 
@@ -18,7 +19,8 @@ Content of the data set was provided via the Coursera website from both the orig
 The process in creating the tidy data is stored in an R script called "run_analysis.R".
 
 
-##What's in "run_analysis.R"
+What's in "run_analysis.R"
+--------------------------------------------------------
 
 The following is a description of the project instructions.
 
@@ -33,7 +35,8 @@ You should create one R script called run_analysis.R that does the following.
 ```
 
 
-##Running "run_analysis.R""
+Running "run_analysis.R"
+---------------------------------------------------------
 
 The following provides the steps to run "run_analysis.R" locally.
 
@@ -43,7 +46,7 @@ The following provides the steps to run "run_analysis.R" locally.
 -4) Use the **read.table** command to read the file. You should see a data set with 180 rows and 68 variables. 
 
 
-##Additional Information
+**Additional Information**
 
 See the CodeBook.md file for information regarding the text variables.
 
