@@ -34,7 +34,8 @@ Source data can be found via this link: [Human Activity Recognition Using Smartp
   +5. standing
   +6. laying
   
--9) *tidydata*: combined *subject, yactivity, xfeatures* into one dataset
+-9) *tidydata*: combined *subject, yactivity, xfeatures* into one dataset. 
+  +Reformatted column names to more descriptive names. i.e. ^f changed to frequency
 
 -10) *tidydata2*: aggregated means of *subject* and *yactivity* variables into second dataset.
 
