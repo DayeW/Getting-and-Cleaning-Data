@@ -38,6 +38,35 @@ Source data can be found via this link: [Human Activity Recognition Using Smartp
 
 -10) *tidydata2*: aggregated means of *subject* and *yactivity* variables into second dataset.
 
+**The following lists the general variable names in "tidydata.txt"**
+
+Identifiers
+``
+-subject
+-activity
+``
+
+
+Measurements
+```
+-timeBodyAccelerometer
+-timeGravityAccelerometer
+-timeBodyAccelerometerJerk
+-timeBodyGyroscope
+-timeBodyGyroscopeJerk
+-timeBodyAccelerometerMagnitude
+-timeBodyAccelerometerJerkMagnitude
+-timeBodyGyroscopeMagnitude
+-timeBodyGyroscopeJerkMagnitude
+-frequencyBodyAccelerometer
+-frequencyBodyAccelerometerJerk
+-frequencyBodyGyroscope
+-frequencyBodyAccelerometerMagnitude
+-frequencyBodyAccelerometerJerkMagnitude
+-frequencyBodyGyroscopeMagnitude
+-frequencyBodyGyroscopeJerkMagnitude
+```
+
 **The following lists all 68 variables (column names) in "tidydata.txt"**
 
 ```{r}
