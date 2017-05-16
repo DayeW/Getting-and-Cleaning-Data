@@ -40,7 +40,7 @@ Source data can be found via this link: [Human Activity Recognition Using Smartp
 -10) *tidydata2*: aggregated means of *subject* and *yactivity* variables into second dataset.
 
 
-**The following lists the general variable names in "tidydata.txt"**
+**General variable names in "tidydata.txt"**
 ---------------------------------------------------------------------
 
 **Identifiers**
