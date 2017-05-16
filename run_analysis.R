@@ -27,7 +27,7 @@ xfeatures <- xfeatures[, meanstd]
 colnames(xfeatures) <- gsub("\\(\\)", "", features[meanstd, 2]) 
 colnames(xfeatures) <- gsub("mean", "Mean", names(xfeatures)) 
 colnames(xfeatures) <- gsub("std", "Std", names(xfeatures)) 
-colnames(xfeatures) <- gsub("-", "", names(xfeatures)) # remove "-" in column names 
+colnames(xfeatures) <- gsub("-", "", names(xfeatures)) 
 
 ###Uses descriptive activity names to name the activities in the data set
 #Read activity file
