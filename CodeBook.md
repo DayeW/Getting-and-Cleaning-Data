@@ -1,31 +1,32 @@
-#CodeBook for Getting and Cleaning Data Course Project
-
+CodeBook for Getting and Cleaning Data Course Project
+=======================================================
 
 Source data can be found via this link: [Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
 ...or downloaded here: [.zip data file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 
-##"run_analysis.R" Script Transformations
+**"run_analysis.R" Script Transformations**
+-------------------------------------------
 
-###Variables used in script file
--1) **xtrain, ytrain, subjecttrain**: read respectively from text files "X_train", "y_train", "subject_train"
+**Variables used in script file**
+-1) *xtrain, ytrain, subjecttrain*: read respectively from text files "X_train", "y_train", "subject_train"
 
--2) **xtest, ytest, subjecttest**: read respectively from text files "X_test", "y_test", "subject_test"
+-2) *xtest, ytest, subjecttest*: read respectively from text files "X_test", "y_test", "subject_test"
 
--3) **xfeatures, yactivity, subject**: read respectively from combining *xtrain and xtest*, *ytrain and ytest*, *subjecttrain and subjecttest*
+-3) *xfeatures, yactivity, subject*: read respectively from combining *xtrain and xtest*, *ytrain and ytest*, *subjecttrain and subjecttest*
   
--4) **features**: read from text file "features"
+-4) *features*: read from text file "features"
 
--5) **meanstd**: extracted mean and standard deviation names from above
+-5) *meanstd*: extracted mean and standard deviation names from above
 
--6) **xfeatures***: transformed previous xfeatures variable with meanstd
+-6) *xfeatures*: transformed previous xfeatures variable with meanstd
   +Removed all "()" and "-"
   +Capitalized M, S
   
--7) **activitylabels**: read text file "activity_labels"
+-7) *activitylabels*: read text file "activity_labels"
 
--8) **activityLabel**: combined above with *yactivty* and reduced to all lower case:
+-8) *activityLabel*: combined above with *yactivty* and reduced to all lower case:
   +1. walking
   +2. walkingupstairs
   +3. walkingdownstairs
@@ -33,11 +34,11 @@ Source data can be found via this link: [Human Activity Recognition Using Smartp
   +5. standing
   +6. laying
   
--9) **tidydata**: combined *subject, yactivity, xfeatures* into one dataset
+-9) *tidydata*: combined *subject, yactivity, xfeatures* into one dataset
 
--10) **tidydata2**: aggregated means of *subject* and *yactivity* variables into second dataset.
+-10) *tidydata2*: aggregated means of *subject* and *yactivity* variables into second dataset.
 
-####The following lists all 68 variables (column names) in "tidydata.txt"
+**The following lists all 68 variables (column names) in "tidydata.txt"**
 
 ```{r}
 [1] "subject"                                    
@@ -111,16 +112,17 @@ Source data can be found via this link: [Human Activity Recognition Using Smartp
 ```
 
 
-##Raw Dataset Summary
+**Raw Dataset Summary**
+------------------------------------------
 
-###Description 
+**Description** 
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details.
 
 
-###Provided Variables
+**Provided Variables**
 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 - Triaxial Angular velocity from the gyroscope. 
@@ -129,7 +131,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 - An identifier of the subject who carried out the experiment.
 
 
-###Provided Files
+**Provided Files**
 
 - 'README.txt'
 - 'features_info.txt': Shows information about the variables used on the feature vector.
@@ -141,7 +143,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 - 'test/y_test.txt': Test labels.
 
 
-###File Descriptions
+**File Descriptions**
 
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 - 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
@@ -149,7 +151,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
 
-####Text Source
+**Text Source**
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
