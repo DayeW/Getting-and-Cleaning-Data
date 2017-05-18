@@ -113,6 +113,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 
 **Text Source**
+
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
